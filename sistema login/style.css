@@ -1,0 +1,139 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Outfit',sans-serif;
+}
+
+body{
+height:100vh;
+background: radial-gradient(circle at top,#0d1b2a,#02060d);
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+color:white;
+}
+
+/* Meteors */
+
+#meteor-container{
+position:absolute;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:0;
+}
+
+/* Login wrapper */
+
+.login-wrapper{
+z-index:2;
+}
+
+/* Panel */
+
+.login-panel{
+width:350px;
+padding:40px;
+border-radius:20px;
+background:rgba(20,25,35,0.6);
+backdrop-filter:blur(12px);
+box-shadow:
+0 0 40px rgba(0,0,0,0.6),
+0 0 120px rgba(0,150,255,0.2);
+text-align:center;
+}
+
+/* Header */
+
+.panel-header h1{
+font-size:26px;
+letter-spacing:2px;
+margin-bottom:5px;
+}
+
+.panel-header p{
+font-size:13px;
+opacity:0.7;
+margin-bottom:25px;
+}
+
+/* Inputs */
+
+.input-group{
+margin-bottom:18px;
+text-align:left;
+}
+
+.input-group label{
+font-size:13px;
+opacity:0.8;
+}
+
+.input-group input{
+width:100%;
+padding:12px;
+margin-top:6px;
+border-radius:10px;
+border:none;
+background:rgba(255,255,255,0.05);
+color:white;
+outline:none;
+}
+
+.input-group input::placeholder{
+color:rgba(255,255,255,0.4);
+}
+
+/* Button */
+
+.login-btn{
+width:100%;
+padding:14px;
+margin-top:10px;
+border:none;
+border-radius:12px;
+background:linear-gradient(45deg,#ff4b4b,#d61c1c);
+color:white;
+font-weight:600;
+letter-spacing:1px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.login-btn:hover{
+transform:scale(1.03);
+box-shadow:0 0 15px rgba(255,0,0,0.5);
+}
+
+/* Footer */
+
+.panel-footer{
+margin-top:20px;
+font-size:11px;
+opacity:0.5;
+}
+
+/* Meteor */
+
+.meteor{
+position:absolute;
+width:2px;
+height:100px;
+background:linear-gradient(-45deg,red,transparent);
+opacity:0.8;
+transform:rotate(45deg);
+animation:meteor 2s linear infinite;
+}
+
+@keyframes meteor{
+0%{
+transform:translateX(0) translateY(0) rotate(45deg);
+opacity:1;
+}
+100%{
+transform:translateX(-500px) translateY(500px) rotate(45deg);
+opacity:0;
+}
+}
