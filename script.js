@@ -1,32 +1,51 @@
+const skills = [
+    "Java (Spigot / Paper API)",
+    "Velocity & Proxy Servers",
+    "Docker & Linux Server Management",
+    "MySQL / Bases de Datos",
+    "Optimización de Rendimiento",
+    "Gestión de Staff y Comunidad",
+    "Plugin Development",
+    "Configuraciones Avanzadas"
+];
+
 const projects = [
     {
-        title: "Shadow Network",
-        desc: "Red multi-servidor completa con proxy Velocity, balanceo de carga y plugins personalizados.",
-        tech: "Velocity • PaperMC • Docker • Java 21"
+        title: "Red Principal",
+        desc: "Gestión completa de una red de servidores Minecraft (Survival, Skyblock, Minijuegos).",
+        tech: "Velocity • PaperMC • Java"
     },
     {
-        title: "Gengar Plugin Suite",
-        desc: "Desarrollo de plugins custom: economía avanzada, sistemas anti-cheat, minijuegos y más.",
-        tech: "Spigot/Paper API • MySQL"
+        title: "Plugins Personalizados",
+        desc: "Desarrollo de sistemas únicos: economía, rangos, eventos y anti-cheat.",
+        tech: "Spigot API • MySQL"
     },
     {
-        title: "Ghost Survival",
-        desc: "Gestión completa de servidor Survival optimizado para alto rendimiento y experiencia fluida.",
-        tech: "PaperMC • LuckPerms • WorldEdit"
+        title: "Servidor Optimizado",
+        desc: "Optimización de rendimiento para alto número de jugadores simultáneos.",
+        tech: "PaperMC • Docker"
     }
 ];
 
+function loadSkills() {
+    const container = document.getElementById('skills-grid');
+    skills.forEach(skill => {
+        const div = document.createElement('div');
+        div.className = 'skill-card';
+        div.textContent = skill;
+        container.appendChild(div);
+    });
+}
+
 function loadProjects() {
     const container = document.getElementById('projects-container');
-    container.innerHTML = '';
-    
-    projects.forEach(p => {
+    projects.forEach(project => {
         const card = document.createElement('div');
         card.className = 'skill-card';
         card.innerHTML = `
-            <h3>${p.title}</h3>
-            <p>${p.desc}</p>
-            <small style="color:#c4b5fd; margin-top:12px; display:block;">${p.tech}</small>
+            <h3>${project.title}</h3>
+            <p>${project.desc}</p>
+            <small>${project.tech}</small>
         `;
         container.appendChild(card);
     });
@@ -35,7 +54,7 @@ function loadProjects() {
 function sendMessage() {
     const name = document.getElementById('name').value.trim();
     if (name) {
-        alert(`👻 Mensaje recibido, ${name}! Te contactaré pronto.`);
+        alert(`👻 ¡Mensaje recibido, ${name}! Gracias por contactarme.`);
         document.getElementById('name').value = '';
         document.getElementById('email').value = '';
         document.getElementById('message').value = '';
@@ -44,4 +63,7 @@ function sendMessage() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', loadProjects);
+document.addEventListener('DOMContentLoaded', () => {
+    loadSkills();
+    loadProjects();
+});
