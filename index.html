@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nrwodd Dev | Minecraft Developer & Manager</title>
+    <title>NRWODD | Minecraft Developer & Server Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background"></div>
-    
     <nav>
         <div class="nav-container">
-            <div class="logo">
-                <span class="gengar-icon">⚡️</span> NrwoddDev
-            </div>
+            <div class="logo">NRWODD</div>
             <div class="nav-links">
                 <a href="#about">Sobre Mí</a>
                 <a href="#skills">Habilidades</a>
                 <a href="#projects">Proyectos</a>
+                <a href="#experience">Experiencia</a>
                 <a href="#contact">Contacto</a>
             </div>
         </div>
@@ -25,12 +22,13 @@
 
     <header class="hero">
         <div class="hero-content">
-            <h1>LilNaayDev</h1>
+            <h1>NRWODD</h1>
             <p class="subtitle">Minecraft Server Developer & Manager</p>
-            <p style="max-width: 700px; margin: 1.5rem auto; font-size: 1.3rem;">
-                Creando experiencias únicas en Minecraft con plugins personalizados y gestión profesional de servidores.
+            <p class="description">
+                Desarrollador Java especializado en plugins personalizados y gestión profesional de servidores Minecraft. 
+                Creo soluciones escalables, optimizadas y con excelente experiencia para los jugadores.
             </p>
-            <div class="cta-buttons">
+            <div class="cta">
                 <a href="#projects" class="btn primary">Ver Proyectos</a>
                 <a href="#contact" class="btn secondary">Comisiones Abiertas</a>
             </div>
@@ -39,15 +37,14 @@
 
     <section id="about" class="section">
         <h2>Sobre Mí</h2>
-        <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto; text-align: center;">
-            Soy LilNaay, desarrollador Java y manager de servidores Minecraft. 
-            Me especializo en crear plugins personalizados, optimizar rendimiento y gestionar comunidades activas. 
-            Siempre busco ofrecer la mejor experiencia posible a los jugadores.
+        <p>
+            Soy NRWODD, un desarrollador y administrador de servidores Minecraft con experiencia en la creación de sistemas complejos, 
+            optimización de rendimiento y gestión de comunidades. Me apasiona transformar ideas en servidores funcionales, divertidos y estables.
         </p>
     </section>
 
     <section id="skills" class="section">
-        <h2>Habilidades</h2>
+        <h2>Habilidades Técnicas</h2>
         <div class="skills-grid" id="skills-grid"></div>
     </section>
 
@@ -56,21 +53,23 @@
         <div class="projects-grid" id="projects-container"></div>
     </section>
 
+    <section id="experience" class="section">
+        <h2>Experiencia</h2>
+        <div class="experience-grid" id="experience-container"></div>
+    </section>
+
     <section id="contact" class="section">
         <h2>Contacto</h2>
         <div class="contact-form">
-            <input type="text" placeholder="Tu nombre" id="name">
-            <input type="email" placeholder="Tu email o Discord" id="email">
-            <textarea placeholder="Cuéntame sobre tu proyecto..." id="message" rows="5"></textarea>
+            <input type="text" id="name" placeholder="Nombre">
+            <input type="text" id="discord" placeholder="Discord">
+            <textarea id="message" placeholder="Cuéntame sobre tu proyecto o idea..." rows="5"></textarea>
             <button onclick="sendMessage()">Enviar Mensaje</button>
         </div>
-        <p style="text-align:center; margin-top: 2rem; color:#c4b5fd;">
-            Discord: <strong>TuDiscord</strong> | Comisiones Abiertas
-        </p>
     </section>
 
     <footer>
-        <p>© 2026 NrwoddDev • ⚡</p>
+        <p>© 2026 NRWODD • Minecraft Developer & Server Manager</p>
     </footer>
 
     <script src="script.js"></script>
