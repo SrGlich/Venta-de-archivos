@@ -1,32 +1,31 @@
-// Datos del portafolio - Edita esto con tu información real
 const skills = [
     "Java Development",
     "Spigot / Paper API",
-    "Velocity & Proxy Management",
-    "Docker & Linux Servers",
-    "MySQL / MongoDB",
+    "Velocity Proxy",
+    "Docker & Linux",
+    "MySQL Databases",
     "Plugin Architecture",
     "Server Optimization",
-    "Staff & Community Management",
-    "Performance Tuning",
-    "Custom Game Mechanics"
+    "Community Management",
+    "Custom Mechanics",
+    "Performance Tuning"
 ];
 
 const projects = [
     {
         title: "Red Multi-Servidor",
-        desc: "Diseño y gestión completa de una red con múltiples modalidades (Survival, Skyblock, Minijuegos).",
-        tech: "Velocity • PaperMC • Java 21 • Docker"
+        desc: "Diseño completo de red con proxy, balanceo y múltiples modalidades.",
+        tech: "Velocity • PaperMC • Docker"
     },
     {
-        title: "Sistema de Plugins Custom",
-        desc: "Desarrollo de plugins avanzados: economía, rangos, eventos, anti-cheat y progresión.",
-        tech: "Spigot API • MySQL • PlaceholderAPI"
+        title: "Plugins Personalizados",
+        desc: "Desarrollo de sistemas de economía, rangos, minijuegos y anti-cheat.",
+        tech: "Java • Spigot API • MySQL"
     },
     {
         title: "Servidor Optimizado",
-        desc: "Optimización de rendimiento para más de 200 jugadores simultáneos con excelente estabilidad.",
-        tech: "PaperMC • Aikar's Flags • Monitoring"
+        desc: "Optimización avanzada para alto rendimiento y estabilidad.",
+        tech: "PaperMC • Aikar's Flags"
     }
 ];
 
@@ -34,16 +33,15 @@ const experience = [
     {
         role: "Minecraft Server Manager",
         period: "2024 - Actualidad",
-        desc: "Gestión completa de servidores, coordinación de staff y desarrollo de nuevas características."
+        desc: "Gestión completa de servidores, staff y desarrollo de características."
     },
     {
         role: "Plugin Developer",
         period: "2023 - Actualidad",
-        desc: "Creación de plugins personalizados para diferentes servidores de la comunidad."
+        desc: "Creación y mantenimiento de plugins personalizados para diferentes proyectos."
     }
 ];
 
-// Cargar Skills
 function loadSkills() {
     const container = document.getElementById('skills-grid');
     skills.forEach(skill => {
@@ -54,7 +52,6 @@ function loadSkills() {
     });
 }
 
-// Cargar Proyectos
 function loadProjects() {
     const container = document.getElementById('projects-container');
     projects.forEach(p => {
@@ -69,7 +66,6 @@ function loadProjects() {
     });
 }
 
-// Cargar Experiencia
 function loadExperience() {
     const container = document.getElementById('experience-container');
     experience.forEach(exp => {
@@ -87,16 +83,15 @@ function loadExperience() {
 function sendMessage() {
     const name = document.getElementById('name').value.trim();
     if (name) {
-        alert(`✅ Mensaje recibido, ${name}. Gracias por contactarme.`);
+        alert(`✅ Mensaje recibido correctamente, ${name}. Gracias!`);
         document.getElementById('name').value = '';
-        document.getElementById('discord').value = '';
+        document.getElementById('contact').value = '';
         document.getElementById('message').value = '';
     } else {
         alert("Por favor ingresa tu nombre.");
     }
 }
 
-// Inicializar todo
 document.addEventListener('DOMContentLoaded', () => {
     loadSkills();
     loadProjects();
