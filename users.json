@@ -1,10 +1,9 @@
-[
-  {
-    "email": "admin@staff.com",
-    "password": "123456"
-  },
-  {
-    "email": "Dayron@pay.com",
-    "password": "admin123"
-  },
-] 
+{
+  "users": [
+    {
+      "username": "gengardev",
+      "role": "Admin",
+      "message": "Bienvenido al portafolio de Gengar"
+    }
+  ]
+}
