@@ -7,16 +7,16 @@
 body {
     font-family: 'Segoe UI', system-ui, sans-serif;
     background: #0a0a0a;
-    color: #e0e0e0;
+    color: #e0d4ff;
     line-height: 1.7;
 }
 
 nav {
-    background: #111111;
+    background: #120c24;
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #5b21b6;
 }
 
 .nav-container {
@@ -29,20 +29,23 @@ nav {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: 700;
     letter-spacing: -1px;
+    color: #c4b5fd;
 }
 
 .nav-links a {
-    color: #bbbbbb;
+    color: #c4b5fd;
     margin-left: 2.5rem;
     text-decoration: none;
     font-weight: 500;
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #00ff9d;
+    color: #e0bbff;
+    text-shadow: 0 0 8px #a855f7;
 }
 
 .hero {
@@ -51,31 +54,35 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, #121212, #0a0a0a);
+    background: linear-gradient(135deg, #1a1233, #0a071a);
     padding: 0 20px;
 }
 
 .hero h1 {
     font-size: 5.8rem;
     font-weight: 700;
+    background: linear-gradient(90deg, #c4b5fd, #e0bbff, #f3e8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 0.8rem;
+    text-shadow: 0 0 40px rgba(168, 85, 247, 0.6);
 }
 
 .subtitle {
     font-size: 2.1rem;
-    color: #00ff9d;
+    color: #a855f7;
     margin-bottom: 1.8rem;
 }
 
 .description {
     max-width: 720px;
     font-size: 1.3rem;
-    color: #bbbbbb;
+    color: #d1c4ff;
     margin: 0 auto 3rem;
 }
 
 .btn {
-    padding: 16px 40px;
+    padding: 16px 42px;
     border-radius: 50px;
     font-size: 1.1rem;
     font-weight: 600;
@@ -84,18 +91,18 @@ nav {
 }
 
 .primary {
-    background: #00ff9d;
-    color: #000;
+    background: linear-gradient(90deg, #a855f7, #c084fc);
+    color: white;
 }
 
 .primary:hover {
-    background: #00cc7a;
-    transform: translateY(-4px);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(168, 85, 247, 0.5);
 }
 
 .secondary {
-    color: #ccc;
-    border: 2px solid #444;
+    color: #c4b5fd;
+    border: 2px solid #7c3aed;
     padding: 14px 36px;
     margin-left: 20px;
 }
@@ -110,7 +117,8 @@ h2 {
     font-size: 3.2rem;
     text-align: center;
     margin-bottom: 4rem;
-    color: white;
+    color: #c4b5fd;
+    text-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
 }
 
 .grid {
@@ -120,34 +128,35 @@ h2 {
 }
 
 .skill-card, .project-card, .exp-card {
-    background: #161616;
+    background: #1a1433;
     padding: 2.5rem;
-    border-radius: 12px;
-    border: 1px solid #222;
+    border-radius: 14px;
+    border: 1px solid #6b21a8;
     transition: 0.4s;
 }
 
 .skill-card:hover, .project-card:hover, .exp-card:hover {
-    border-color: #00ff9d;
+    border-color: #c084fc;
     transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.3);
 }
 
 .contact-form {
     max-width: 700px;
     margin: 0 auto;
-    background: #161616;
+    background: #1a1433;
     padding: 3.5rem;
     border-radius: 16px;
-    border: 1px solid #222;
+    border: 1px solid #6b21a8;
 }
 
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 18px;
     margin: 12px 0;
-    background: #111;
-    border: 1px solid #333;
-    color: white;
+    background: #120c24;
+    border: 1px solid #7c3aed;
+    color: #e0d4ff;
     border-radius: 10px;
     font-size: 1.05rem;
 }
@@ -155,8 +164,8 @@ h2 {
 button {
     width: 100%;
     padding: 18px;
-    background: #00ff9d;
-    color: black;
+    background: linear-gradient(90deg, #a855f7, #c084fc);
+    color: white;
     border: none;
     border-radius: 50px;
     font-size: 1.15rem;
@@ -168,6 +177,6 @@ button {
 footer {
     text-align: center;
     padding: 4rem 2rem;
-    background: #111;
-    color: #666;
+    background: #120c24;
+    color: #b794f6;
 }
