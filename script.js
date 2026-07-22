@@ -1,16 +1,8 @@
-// ==================== EMAILJS CONFIG ====================
+// ==================== EMAILJS ====================
 const EMAILJS_SERVICE_ID = "service_xfimnwp";
 const EMAILJS_TEMPLATE_ID = "template_dexvi6n";
 const EMAILJS_PUBLIC_KEY = "RexNOh_t6-ejNVyyn";
 
-// Inicializar EmailJS
-function initEmailJS() {
-    if (typeof emailjs !== "undefined") {
-        emailjs.init(EMAILJS_PUBLIC_KEY);
-    }
-}
-
-// Enviar mensaje
 function sendMessage() {
     const name = document.getElementById('name').value.trim();
     const contact = document.getElementById('contact').value.trim();
@@ -22,78 +14,35 @@ function sendMessage() {
     }
 
     const btn = document.querySelector('button');
-    const originalText = btn.textContent;
     btn.textContent = "Enviando...";
     btn.disabled = true;
+
+    console.log("Intentando enviar...");
 
     emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
         name: name,
         contact_info: contact,
         message: messageText
-    }).then(() => {
-        alert("✅ ¡Mensaje enviado correctamente! Gracias.");
+    }).then((response) => {
+        console.log("Éxito:", response);
+        alert("✅ ¡Mensaje enviado correctamente!");
+        // Limpiar
         document.getElementById('name').value = '';
         document.getElementById('contact').value = '';
         document.getElementById('message').value = '';
     }).catch((error) => {
-        console.error(error);
-        alert("❌ Error al enviar el mensaje. Inténtalo de nuevo.");
+        console.error("Error completo:", error);
+        alert("❌ Error al enviar. Revisa la consola (F12) y dime qué dice.");
     }).finally(() => {
-        btn.textContent = originalText;
+        btn.textContent = "Enviar Mensaje";
         btn.disabled = false;
     });
 }
 
-// Datos del portafolio
-const skills = [
-    "Java Development", "Spigot / Paper API", "Velocity Proxy",
-    "Docker & Linux", "MySQL Databases", "Plugin Architecture",
-    "Server Optimization", "Community Management"
-];
-
-const projects = [
-    {
-        title: "Red Multi-Servidor",
-        desc: "Diseño y gestión completa de red con proxy.",
-        tech: "Velocity • PaperMC • Docker"
-    },
-    {
-        title: "Plugins Personalizados",
-        desc: "Economía, rangos, minijuegos y sistemas avanzados.",
-        tech: "Java • Spigot API • MySQL"
-    },
-    {
-        title: "Servidor Optimizado",
-        desc: "Optimización para alto rendimiento y estabilidad.",
-        tech: "PaperMC"
-    }
-];
-
-// Cargar secciones
-function loadSkills() {
-    const container = document.getElementById('skills-grid');
-    container.innerHTML = '';
-    skills.forEach(skill => {
-        const div = document.createElement('div');
-        div.className = 'skill-card';
-        div.innerHTML = `<strong>${skill}</strong>`;
-        container.appendChild(div);
-    });
-}
-
-function loadProjects() {
-    const container = document.getElementById('projects-container');
-    container.innerHTML = '';
-    projects.forEach(p => {
-        const card = document.createElement('div');
-        card.className = 'project-card';
-        card.innerHTML = `<h3>${p.title}</h3><p>${p.desc}</p><small>${p.tech}</small>`;
-        container.appendChild(card);
-    });
-}
-
+// Cargar contenido
 document.addEventListener('DOMContentLoaded', () => {
-    loadSkills();
-    loadProjects();
-    initEmailJS();
+    console.log("Página cargada - NRWODD Portfolio");
+    
+    // Cargar skills y projects (si los tienes)
+    // ... (puedes agregar después)
 });
