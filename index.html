@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LowwTier - Manager Profesional de Minecraft">
+    <title>LowwTier - Minecraft Manager Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Pantalla de Carga -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <img src="images/loading.gif" alt="Loading" class="loading-gif">
+            <h1 class="welcome-text">¡Bienvenido A Mi Portafolio!</h1>
+        </div>
+        
+        <audio id="background-music" loop preload="auto">
+            <source src="audio/minecraft-theme.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html#home" class="nav-logo">
+                <img src="images/logo.gif" alt="Logo LowwTier" class="logo-img">
+                <span class="logo-text">LowwTier</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Inicio</a></li>
+                <li><a href="index.html#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="index.html#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="index.html#services" class="nav-link">Servicios</a></li>
+                <li><a href="index.html#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-background-gif"></div>
+        
+        <div class="hero-content">
+            <div style="display: flex; align-items: center; gap: 3rem; flex-wrap: wrap;">
+                <div class="hero-text" style="flex: 1; min-width: 300px;">
+                    <h2>Hola, soy <span class="highlight">LowwTier</span></h2>
+                    <h1 class="typing-container">
+                        <span id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </h1>
+                    <p class="hero-description">Manager profesional de Minecraft con 3 años de experiencia gestionando servidores, liderando equipos y creando experiencias inolvidables para comunidades.</p>
+                    <div class="hero-buttons">
+                        <a href="index.html#contact" class="btn btn-primary">Contáctame</a>
+                        <a href="index.html#about" class="btn btn-secondary">Conoce Más</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://discord.com/channels/@me/1409683089780772944" target="_blank" class="social-icon" title="Discord"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="profile-container">
+                    <img src="images/profile.gif" alt="LowwTier Profile" class="profile-gif">
+                    <div class="code-particles">
+                        <span class="particle" style="--delay: 0s; --x: -120px; --y: -120px;">⛏️ Mining</span>
+                        <span class="particle" style="--delay: 0.25s; --x: 120px; --y: -120px;">🎮 Plugins</span>
+                        <span class="particle" style="--delay: 0.5s; --x: -150px; --y: 0px;">👥 Staff</span>
+                        <span class="particle" style="--delay: 0.75s; --x: 150px; --y: 0px;">🏰 Builder</span>
+                        <span class="particle" style="--delay: 1s; --x: 0px; --y: -150px;">💎 Premium</span>
+                        <span class="particle" style="--delay: 1.25s; --x: -120px; --y: 120px;">⚡ Events</span>
+                        <span class="particle" style="--delay: 1.5s; --x: 120px; --y: 120px;">🔧 Config</span>
+                        <span class="particle" style="--delay: 1.75s; --x: 0px; --y: 150px;">📊 Stats</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre <span class="highlight">Mí</span></h2>
+            
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="images/animation.gif" alt="Minecraft Animation" class="animation-gif">
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Soy LowwTier, un Manager profesional de Minecraft con 3 años de experiencia transformando servidores simples en comunidades prósperas. Mi pasión está en crear experiencias únicas, gestionar equipos eficientes y construir sistemas que mantienen a los jugadores comprometidos y felices.
+                    
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-server"></i>
+                            <div class="info-content">
+                                <h3>Experiencia</h3>
+                                <p>3 años gestionando servidores de 50-500+ jugadores</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <div class="info-content">
+                                <h3>Comunidad</h3>
+                                <p>+5,000 jugadores gestionados exitosamente</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-trophy"></i>
+                            <div class="info-content">
+                                <h3>Logros</h3>
+                                <p>21+ servidores completados con éxito</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades & <span class="highlight">Expertise</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-users-cog"></i> Liderazgo de Equipo</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Gestión de Staff</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Resolución de Conflictos</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Capacitación y Mentoring</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-crown"></i> Habilidades de Gestión</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Planificación Estratégica</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Toma de Decisiones</span>
+                            <span>93%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="93"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Gestión de Recursos</span>
+                            <span>87%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="87"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-comments"></i> Gestión de Comunidad</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Gestión de Discord</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Planificación de Eventos</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Marketing y Crecimiento</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="82"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Mis <span class="highlight">Servicios</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Staff Management</h3>
+                    <p>Reclutamiento, capacitación y gestión de equipos de staff. Creación de jerarquías, roles y sistemas de permisos efectivos.</p>
+                    <div class="service-tags">
+                        <span>Team Building</span>
+                        <span>Leadership</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Community Building</h3>
+                    <p>Desarrollo y gestión de comunidades activas. Planificación de eventos, actividades y estrategias de crecimiento.</p>
+                    <div class="service-tags">
+                        <span>Engagement</span>
+                        <span>Events</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Event Planning</h3>
+                    <p>Organización de eventos especiales, torneos PvP, concursos y actividades que mantienen la comunidad activa y comprometida.</p>
+                    <div class="service-tags">
+                        <span>Tournaments</span>
+                        <span>Competitions</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Moderation & Rules</h3>
+                    <p>Implementación de sistemas de moderación efectivos, creación de reglas claras y gestión de reportes y conflictos.</p>
+                    <div class="service-tags">
+                        <span>Fair Play</span>
+                        <span>Conflict Resolution</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>Discord Management</h3>
+                    <p>Configuración completa de servidores Discord, implementación de bots, sistemas de verificación, roles automáticos y canales organizados.</p>
+                    <div class="service-tags">
+                        <span>Bots Setup</span>
+                        <span>Organization</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Growth Strategy</h3>
+                    <p>Estrategias de marketing, promoción en redes sociales y técnicas para aumentar la base de jugadores del servidor.</p>
+                    <div class="service-tags">
+                        <span>Marketing</span>
+                        <span>Social Media</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos <span class="highlight">Destacados</span></h2>
+            
+<!-- Proyecto Destacado Actual (Suncraft) -->
+<div class="current-project">
+    <div class="current-badge">🔥 ACTUAL</div>
+    <div class="project-card featured">
+        <div class="project-icon">☀️</div>
+        <h3>Suncraft</h3>
+        <p>El servidor principal con la mejor experiencia competitiva y eventos diarios.</p>
+        <div class="project-stats">
+            <span><i class="fas fa-gamepad"></i> Principal</span>
+            <span><i class="fas fa-calendar"></i> 2026</span>
+            <span><i class="fas fa-star"></i> Activo</span>
+        </div>
+    </div>
+</div>
+
+<div class="projects-year-section">
+    <h3 class="year-title">🥽 Servidores 2026</h3>
+    <div class="projects-grid">
+
+        <!-- ChowBox -->
+        <div class="project-card">
+            <div class="project-icon">📦</div>
+            <h3>ChowBox</h3>
+            <p>Nueva modalidad disponible con recompensas exclusivas y jugabilidad fluida.</p>
+            <div class="project-stats">
+                <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                <span><i class="fas fa-calendar"></i> 2026</span>
+            </div>
+        </div>
+
+        <!-- AstralBox -->
+        <div class="project-card">
+            <div class="project-icon">🌌</div>
+            <h3>AstralBox</h3>
+            <p>Explora mundos cósmicos con sistemas de rangos y clanes únicos.</p>
+            <div class="project-stats">
+                <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                <span><i class="fas fa-calendar"></i> 2026</span>
+            </div>
+        </div>
+
+        <!-- NigthBox -->
+        <div class="project-card">
+            <div class="project-icon">🌙</div>
+            <h3>NigthBox</h3>
+            <p>Supervivencia extrema y combate PvP intenso para los más valientes.</p>
+            <div class="project-stats">
+                <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                <span><i class="fas fa-calendar"></i> 2026</span>
+            </div>
+        </div>
+
+        <!-- Supervisor BoxPvP Tierlist -->
+        <div class="project-card">
+            <div class="project-icon">🏆</div>
+            <h3>Supervisor BoxPvP Tierlist</h3>
+            <p>La guía definitiva y mejor valorada para dominar el ranking competitivo.</p>
+            <div class="project-stats">
+                <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                <span><i class="fas fa-calendar"></i> 2026</span>
+            </div>
+        </div>
+
+        <!-- MineDash -->
+        <div class="project-card">
+            <div class="project-icon">🎀</div>
+            <h3>MineDash</h3>
+            <p>Servidor enfocado en la velocidad y combate dinámico con habilidades de dash.</p>
+            <div class="project-stats">
+                <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                <span><i class="fas fa-calendar"></i> 2026</span>
+            </div>
+        </div>
+
+        <!-- BluvenNetwork -->
+        <div class="project-card">
+            <div class="project-icon">💎</div>
+            <h3>BluvenNetwork</h3>
+            <p>Red global de servidores con economía avanzada y múltiples modalidades competitivas.</p>
+            <div class="project-stats">
+                <span><i class="fas fa-gamepad"></i> Network</span>
+                <span><i class="fas fa-calendar"></i> 2026</span>
+            </div>
+        </div>
+
+        <!-- MineLow -->
+        <div class="project-card">
+            <div class="project-icon">☁️</div>
+            <h3>MineLow</h3>
+            <p>BoxPvP optimizado para el máximo rendimiento y la menor latencia competitiva.</p>
+            <div class="project-stats">
+                <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                <span><i class="fas fa-calendar"></i> 2026</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+            <div class="projects-year-section">
+                <h3 class="year-title">🎯 Servidores 2025</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">⚔️</div>
+                        <h3>MineBack</h3>
+                        <p>Servidor BoxPvP con sistema avanzado y combate estratégico.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">🥥</div>
+                        <h3>MineCrush</h3>
+                        <p>BoxPvP con kits personalizados.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">🧨</div>
+                        <h3>Bluven</h3>
+                        <p>BoxPvP temático con combates intensos y progreso constante.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">🧸</div>
+                        <h3>MineBlast</h3>
+                        <p>Servidor BoxPvP con sistema de explosiones y combate dinámico.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">🔥</div>
+                        <h3>Infernum</h3>
+                        <p>BoxPvP temático infernal con kits personalizados.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">🚀</div>
+                        <h3>SpaceXMC</h3>
+                        <p>BoxPvP con temática espacial.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">✨</div>
+                        <h3>Spectra</h3>
+                        <p>BoxPvP multicolor con efectos visuales.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">☀️</div>
+                        <h3>SunMC</h3>
+                        <p>BoxPvP temático solar.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">👑</div>
+                        <h3>MineKoth</h3>
+                        <p>BoxPvP con eventos KOTH.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">📡</div>
+                        <h3>MineKast</h3>
+                        <p>BoxPvP con transmisiones.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">🕳️</div>
+                        <h3>VoidBox</h3>
+                        <p>BoxPvP en el vacío.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">⚡</div>
+                        <h3>ZuraMC</h3>
+                        <p>BoxPvP con sistema eléctrico.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">🧙</div>
+                        <h3>WhitchMC</h3>
+                        <p>BoxPvP mágico.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">🐉</div>
+                        <h3>LeviathanMC</h3>
+                        <p>BoxPvP épico.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">🌟</div>
+                        <h3>Destiny</h3>
+                        <p>BoxPvP con destinos.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">🛰️</div>
+                        <h3>SateliteMC</h3>
+                        <p>BoxPvP espacial.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">🩸</div>
+                        <h3>CrimsonMC</h3>
+                        <p>BoxPvP vampírico.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">🦅</div>
+                        <h3>Valkyrian</h3>
+                        <p>BoxPvP nórdico.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">⚔️</div>
+                        <h3>BunderCraft</h3>
+                        <p>BoxPvP con clanes.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-year-section">
+                <h3 class="year-title">📅 Servidores 2024</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">🎯</div>
+                        <h3>HeadCraft</h3>
+                        <p>BoxPvP con recompensas.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">🌅</div>
+                        <h3>DayoMC</h3>
+                        <p>BoxPvP con ciclos.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">💀</div>
+                        <h3>DoomLand</h3>
+                        <p>BoxPvP apocalíptico.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">🐱</div>
+                        <h3>FallCat</h3>
+                        <p>BoxPvP felino.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-gamepad"></i> BoxPvP</span>
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-stats-banner">
+                <div class="stat-item">
+                    <h4>31+</h4>
+                    <p>Servidores</p>
+                </div>
+                <div class="stat-item">
+                    <h4>3 Años</h4>
+                    <p>Experiencia</p>
+                </div>
+                <div class="stat-item">
+                    <h4>BoxPvP</h4>
+                    <p>Especialización</p>
+                </div>
+                <div class="stat-item">
+                    <h4>100%</h4>
+                    <p>Compromiso</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacta<span class="highlight">me</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¡Hablemos de tu Proyecto!</h3>
+                    <p>¿Necesitas un Manager profesional? ¡Contáctame!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>fabricioarrunategui@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-discord"></i>
+                            <div>
+                                <h4>Discord</h4>
+                                <p>deluxehub</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Ecuador</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Disponibilidad</h4>
+                                <p>Lun - Dom, 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" action="https://formspree.io/f/mwvpgpbe" method="POST">
+                    <div class="form-group">
+                        <label class="form-label">Envía un mensaje directo</label>
+                        <input type="text" name="name" class="form-input" placeholder="Tu nombre / Nick" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email / Discord</label>
+                        <input type="text" name="email" class="form-input" placeholder="tu@email.com o tu discord tag" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Tipo de Proyecto</label>
+                        <input type="text" name="project" class="form-input" placeholder="Ej: Servidor Survival, Network PvP, Consultoría..." required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Mensaje</label>
+                        <textarea class="form-textarea" name="message" placeholder="Cuéntame sobre tu proyecto y cómo puedo ayudarte..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 LowwTier - Minecraft Manager. Todos los derechos reservados.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">Minecraft es una marca registrada de Mojang AB</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+</html>
